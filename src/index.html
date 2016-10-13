@@ -1,0 +1,54 @@
+<html ng-app="App">
+<head>
+  <script src='/dist/bundle.js'></script>
+</head>
+<body ng-controller="MainController as mc">
+    <div>
+      <div>
+        <div ng-click="mc.onClickAtIndex(mc.board, 0,0)" class=square>
+          {{ mc.getBoardPosition(mc.board,0,0) }}
+        </div>
+        <div ng-click="mc.onClickAtIndex(mc.board, 0,1)"class=square>
+          {{ mc.getBoardPosition(mc.board,0,1) }}
+        </div>
+        <div ng-click="mc.onClickAtIndex(mc.board, 0,2)"class=square>
+          {{ mc.getBoardPosition(mc.board,0,2) }}
+        </div>
+      </div>
+      <div>
+        <div ng-click="mc.onClickAtIndex(mc.board, 1,0)"class=square>
+          {{ mc.getBoardPosition(mc.board,1,0) }}
+        </div>
+        <div ng-click="mc.onClickAtIndex(mc.board, 1,1)"class=square>
+          {{ mc.getBoardPosition(mc.board,1,1) }}
+        </div>
+        <div ng-click="mc.onClickAtIndex(mc.board, 1,2)"class=square>
+          {{ mc.getBoardPosition(mc.board,1,2) }}
+        </div>
+      </div>
+      <div>
+        <div ng-click="mc.onClickAtIndex(mc.board, 2,0)" class=square>
+          {{ mc.getBoardPosition(mc.board,2,0) }}
+        </div>
+        <div ng-click="mc.onClickAtIndex(mc.board, 2,1)"class=square>
+          {{ mc.getBoardPosition(mc.board,2,1) }}
+        </div>
+        <div ng-click="mc.onClickAtIndex(mc.board, 2,2)"class=square>
+          {{ mc.getBoardPosition(mc.board,2,2) }}
+        </div>
+      </div>
+  
+
+      <div style = "font-size: 2em", ng-show="mc.isGameOver(mc.board)">
+        The Game is Over!
+        <p ng-show = "mc.didXWin(mc.board)">X has won!</p>
+        <p ng-show = "mc.didOWin(mc.board)">O has won!</p>
+        <p ng-show = "mc.isTie(mc.board)">No one wins. It's a Tie.</p>
+        <p> <button type="button" ng-click= "mc.reset()">Play Again</button></p>
+      </div>
+    </div>
+
+
+
+</body>
+</html>

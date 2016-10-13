@@ -1,0 +1,26 @@
+body {
+  background-color: grey;
+}
+
+.square {
+  height: 80px;
+  width: 80px;
+  font-family: 'Permanent Marker', cursive;
+  background-color: #43857C;
+  font-size: 5.5em;
+  font-color: #0C4700;
+  /*  border-radius: 15%;  */
+  border: 2px solid #111111;
+  display: inline-block;
+  vertical-align: middle;
+
+  .square:hover {
+  background-color: #395000; /* Green */
+  color: white;
+}
+  }
+
+  p {
+    font-size: 1.5em;
+    color: green;
+  }
