@@ -77,12 +77,10 @@ export function makeAMove(board, row, column, playerChar) {
   newBoard[row][column] = playerChar;
   return newBoard;
 }
-var fixedBoard = [[X, O, X],
-                  [O, null, null],
-                  [null, null, null]];
+
 export function newBoard() {
 
-  // return fixedBoard;
+  // create a new null board
 
   return [[null, null, null],
       [null, null, null],
@@ -96,7 +94,6 @@ export function newBoard() {
 
 export function computersTurn (board, playerChar){
   var move = bestMove(board, playerChar);
-  console.log("move", move);
   playAtIndex(board, move.row, move.column);
 
 }
@@ -200,5 +197,3 @@ export function availableMoves (board) {
   }
   return avail;
 }
-
-console.log("availableMoves", availableMoves(newBoard(), X));

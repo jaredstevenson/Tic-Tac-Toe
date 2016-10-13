@@ -17,11 +17,9 @@ function fibanochi(n){
   }
 }
 
-//console.log("factorial 9", factorial(5));
 
 function callFunctions(){
   for(var i=1; i < 15; i++){
-    console.log("fibanochi", fibanochi(i));
 
   }
 

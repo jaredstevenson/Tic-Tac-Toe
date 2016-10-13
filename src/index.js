@@ -31,7 +31,6 @@ app.controller('MainController', [ function(){
 }])
 
 function isHumanTurn (board, humanPlayer) {
-  console.log("model", model);
   if (humanPlayer === model.X)  return model.isXTurn(board);
   else return (!model.isXturn(board));
 }
