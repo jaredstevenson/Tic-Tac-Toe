@@ -6,7 +6,7 @@ var path = require("path")
       proxy: {
         '/': {
           bypass: function(req, res, proxyOptions) {
-            return '/src/index.html';
+            return '/index.html';
           }
         }
       }
