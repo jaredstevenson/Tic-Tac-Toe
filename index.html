@@ -1,6 +1,6 @@
 <html ng-app="App">
 <head>
-  <script src='/dist/bundle.js'></script>
+  <script src='./dist/bundle.js'></script>
 </head>
 <body ng-controller="MainController as mc">
     <div>
@@ -37,7 +37,7 @@
           {{ mc.getBoardPosition(mc.board,2,2) }}
         </div>
       </div>
-  
+
 
       <div style = "font-size: 2em", ng-show="mc.isGameOver(mc.board)">
         The Game is Over!
