@@ -1,6 +1,7 @@
 # Tic-Tac-Toe
 Play Tic-Tac-Toe against the computer
-[demo](https://jaredstevenson.github.io/Tic-Tac-Toe/)
+
+[Play the Game!](https://jaredstevenson.github.io/Tic-Tac-Toe/)
 
 
 
